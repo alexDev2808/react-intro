@@ -1,0 +1,11 @@
+.todoList-container {
+    width: 100%;
+    padding: 0 2rem;
+}
+.todoList-container__ul {
+    max-width: 580px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

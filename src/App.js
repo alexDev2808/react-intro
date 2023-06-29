@@ -8,28 +8,33 @@ import './App.css';
 
 const defaultTODOs = [
   { text: "Aprender React", completed: false },
-  { text: "Aprender Desarrollo Movil", completed: false },
+  { text: "Aprender Desarrollo Movil con Kotlin y Android Studio", completed: false },
   { text: "Aprender Python", completed: false },
   { text: "Aprender Ingles", completed: false },
 ]
 
 function App() {
   return (
-    <div className="App">
+    <>
 
-      <TodoCounter completed={14} total={23} />
-      <TodoSearch />
+      <div className='app-container'>
 
-      <TodoList>
-        {defaultTODOs.map(todo => (
-          <TodoItem key={todo.text} text={todo.text} completed={todo.completed} />
-        ))}
-      </TodoList>
+        <h1>Lista de Tareas</h1>
+
+        <TodoCounter completed={14} total={23} />
+        <TodoSearch />
+
+        <TodoList>
+          {defaultTODOs.map(todo => (
+            <TodoItem key={todo.text} text={todo.text} completed={todo.completed} />
+          ))}
+        </TodoList>
 
 
-      <CreateTodoButton />
+        <CreateTodoButton />
+      </div>
 
-    </div>
+    </>
   );
 }
 

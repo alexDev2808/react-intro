@@ -1,0 +1,19 @@
+.createTodoBtn {
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+    border: dotted 4px #000;
+    background-color: #9681EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    bottom: 4rem;
+    right: 4rem;
+
+    transition: all ease-in-out 1s;
+}
+.createTodoBtn:hover {
+    transform: rotate(180deg);
+}

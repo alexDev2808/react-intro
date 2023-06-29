@@ -1,0 +1,20 @@
+.input-search {
+    width: 28rem;
+    height: 4rem;
+    padding-left: 2rem;
+    border-radius: 6px;
+    border: 1px solid #000;
+    margin-bottom: 5rem;
+
+    transition: all ease .2s;
+}
+
+.input-search:hover {
+    box-shadow: -6px 6px 0px rgb(15,14,14);
+    transform: translateY(-2px);
+}
+.input-search:focus{
+    outline: 2px solid #000;
+    box-shadow: -6px 6px 0px rgb(15,14,14);
+    transform: translateY(-2px);
+}

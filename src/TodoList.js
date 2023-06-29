@@ -1,9 +1,13 @@
+import "./TodoList.css";
+
 function TodoList(props) {
     return (
     
-        <ul>
-            {props.children}
-        </ul>
+        <div className="todoList-container">
+            <ul className="todoList-container__ul">
+                {props.children}
+            </ul>
+        </div>
     
     );
 
